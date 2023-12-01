@@ -1,0 +1,188 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header */
+.header{
+    width: 100%;
+    color: white;
+    padding: 20px;
+    background: rgb(65, 68, 245);
+    box-sizing: border-box;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.header-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-logo{
+    display: flex; /*включение flexbox*/
+    flex-direction: row; /*расположение по ох*/
+    align-items: center; /*расположение по оу*/
+    flex-grow: 1; /*размер относительно других элементов*/
+}
+
+.logo-img{
+    margin-right: 40px;
+}
+
+.header-menu{
+    flex-grow: 3;
+}
+
+
+.menu-item{
+    list-style: none;
+}
+
+.menu-link{
+    text-decoration: none;
+    color: white;
+    /* приводим весь текст к верхнему регистру */
+    text-transform: uppercase;
+    /*толщина символов */
+    font-weight: bold;
+}
+
+.container{
+    max-width: 1140px;
+    padding: 0 15 px;
+    margin: 0 auto;
+}
+
+
+/*Banner*/
+
+.banner-title, .banner-description{
+    text-align: center;
+    color: white;
+}
+
+.banner-title{
+    font-size: 48px;
+}
+
+.banner-section{
+    padding: 100px 0;
+    background: rgba(0, 0, 0, .65) url(фон_bn.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Cards */
+.cards-section{
+    padding: 50px 0;
+}
+
+.cards-title, .cards-description{
+    color: black;
+    text-align: center;
+}
+
+.card{
+    padding: 25px;
+    margin-top: 25px;
+    width: 40%;
+    background: white;
+    box-shadow: 0px 2px 7px 0px #1903a5;
+    text-align: center;
+}
+
+.card-link{
+    text-decoration: none;
+    color: white;
+}
+
+.card-button{
+    text-align: center;
+    background: #03186d;
+    padding: 10px 70px;
+    border-radius: 10px;
+}
+
+.card-title, .card-text{
+    margin-bottom: 10px;
+}
+
+.card-button{
+    /* виды курсора*/
+    cursor: pointer;
+}
+
+.cards-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card:hover {
+    box-shadow: 0px 4px 14px 0px #1903a5;
+}
+
+
+
+/* .cards {
+    display: inline-block;
+    width: 45%;
+    margin: 0px 45;
+} */
+
+/*Footer*/
+
+.footer{
+    background: url(footer_bn.jpg);
+    background-size: cover;
+    padding: 100px 0px;
+}
+
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-img{
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.copyright{
+    color: white;
+}
+
+
+.footer-search{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.footer-search-input{
+    height: 40px;
+    flex-grow: 3;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.footer-search-button{
+    height: 40px;
+    flex-grow: 2;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
